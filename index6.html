@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Link Styles</title>
+
+    <style>
+      /* Unvisited link */
+      a:link {
+        color: red;
+        text-decoration: none;
+        background-color: yellow;
+      }
+
+      /* Visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* Mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* Selected/active link */
+      a:active {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      <b>
+        <a href="https://bijali-jayalakshmi-jayan.vercel.app/" target="_blank">
+          This is my Website
+        </a>
+      </b>
+    </p>
+
+    <p>
+      <b>Note:</b>
+      a:hover MUST come after a:link and a:visited in order to work properly.
+    </p>
+
+    <p>
+      <b>Note:</b>
+      a:active MUST come after a:hover in order to work properly.
+    </p>
+
+    <p>Unvisited link : red</p>
+    <p>Visited link : green</p>
+    <p>Hover link : hotpink</p>
+    <p>Active link : blue</p>
+  </body>
+</html>
