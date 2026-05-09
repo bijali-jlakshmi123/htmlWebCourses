@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script type="text/javascript">
+    function add() {
+      var s, a, b;
+      a = Number(document.sumform.firstnum.value);
+      b = Number(document.sumform.secondname.value);
+      s = a + b;
+      document.sumform.sum.value = s;
+    }
+  </script>
+  <body>
+    <form action="" name="sumform">
+      <input type="text" name="firstnum" />
+      <input type="text" name="secondname" />
+      <input type="text" name="sum" id="" />
+      <input type="button" onclick="add()" value="sum" name="" id="" />
+    </form>
+  </body>
+</html>
