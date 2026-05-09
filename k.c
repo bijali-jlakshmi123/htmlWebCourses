@@ -15,7 +15,7 @@ int main(){
             {
                 printf("* ");
                 m=m+1;
-                n=n+1;
+                n=n-1;
             }
             else
             {
