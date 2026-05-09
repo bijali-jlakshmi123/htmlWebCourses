@@ -40,9 +40,21 @@
         color: red;
         margin-top: 10px;
       }
+      .watermark {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        font-size: 90px;
+        color: rgba(42, 40, 40, 0.219);
+        font-weight: bold;
+        z-index: -1;
+        white-space: nowrap;
+      }
     </style>
   </head>
   <body>
+    <div class="watermark">MG UNIVERSITY</div>
     <div class="container">
       <h2>Mahatma Gandhi University PG CSS Exam Results</h2>
       <p>
