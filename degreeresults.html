@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MG University - Exam Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="degreeresults.css" />
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://dsdc.mgu.ac.in/exQpMgmt/images/logo.gif" alt="MG University Logo" class="logo" />
+            </div>
+            <div class="title-container">
+                <h1>Mahatma Gandhi University</h1>
+                <h2>CBCSS Exam Results <span class="badge">(Revised Scheme)</span></h2>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="form-card glass-panel">
+                <form id="resultForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="exam_id">Examination <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select name="exam_id" id="exam_id" required>
+                                <option value="" disabled>--- Select Examination ---</option>
+                                <option value="154" selected>SIXTH SEMESTER CBCS EXAMINATION MARCH 2022</option>
+                                <option value="144">FIFTH SEMESTER B Voc Degree EXAMINATION OCTOBER 2024</option>
+                                <option value="157">FOURTH SEMESTER Bvoc Degree EXAMINATION MARCH 2025</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prn">PRN (Permanent Register Number) <span class="required">*</span></label>
+                        <input type="text" id="prn" name="prn" value="190021095015" placeholder="Enter your 12-digit PRN" required maxlength="12" pattern="\d{12}" title="Please enter exactly 12 digits" autocomplete="off" />
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="btnresult" class="submit-btn">
+                            <span>Get Result</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- RESULT SECTION -->
+            <div class="result-card glass-panel fade-in">
+                <div class="student-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Permanent Register Number:</span>
+                            <span class="info-value highlight">190021095015</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Name of Student:</span>
+                            <span class="info-value highlight-pink">BIJALI JAYALAKSHMI JAYAN</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Programme:</span>
+                            <span class="info-value">Bachelor of Computer Application</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Exam Centre:</span>
+                            <span class="info-value">Mar Kuriakose Arts & Science, Puthuvely</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Marks Table -->
+                <div class="table-wrapper">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Course Code</th>
+                                <th rowspan="2">Course</th>
+                                <th rowspan="2">Credit</th>
+                                <th colspan="2">EXTERNAL</th>
+                                <th colspan="2">INTERNAL</th>
+                                <th rowspan="2">Total</th>
+                                <th rowspan="2">MAX</th>
+                                <th rowspan="2">Grade</th>
+                                <th rowspan="2">GP</th>
+                                <th rowspan="2">CP</th>
+                                <th rowspan="2">Result</th>
+                            </tr>
+                            <tr>
+                                <th class="sub-th">ESA</th>
+                                <th class="sub-th">MAX</th>
+                                <th class="sub-th">ISA</th>
+                                <th class="sub-th">MAX</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CA6CRT04</td>
+                                <td class="text-left">Cloud Computing</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>80</td>
+                                <td>17</td>
+                                <td>20</td>
+                                <td>68</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">B+</span></td>
+                                <td>7</td>
+                                <td>28</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td>CS6CRT15</td>
+                                <td class="text-left">Mobile Application Development- Android</td>
+                                <td>4</td>
+                                <td>66</td>
+                                <td>80</td>
+                                <td>18</td>
+                                <td>20</td>
+                                <td>84</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">A</span></td>
+                                <td>8</td>
+                                <td>32</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td>CA6PRP02</td>
+                                <td class="text-left">Software Development Lab II (Main Project)</td>
+                                <td>3</td>
+                                <td>75</td>
+                                <td>80</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>94</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">A+</span></td>
+                                <td>9</td>
+                                <td>27</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td>CS6CBT02</td>
+                                <td class="text-left">Data Mining</td>
+                                <td>4</td>
+                                <td>37</td>
+                                <td>80</td>
+                                <td>18</td>
+                                <td>20</td>
+                                <td>55</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">B</span></td>
+                                <td>6</td>
+                                <td>24</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td>CA6SMP01</td>
+                                <td class="text-left">Software Lab VI and Seminar</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td></td>
+                                <td>65</td>
+                                <td>100</td>
+                                <td>65</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">B+</span></td>
+                                <td>7</td>
+                                <td>14</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td>CA6VVP01</td>
+                                <td class="text-left">Viva Voce</td>
+                                <td>1</td>
+                                <td>93</td>
+                                <td>100</td>
+                                <td>0</td>
+                                <td></td>
+                                <td>93</td>
+                                <td>100</td>
+                                <td><span class="badge badge-grade">A+</span></td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td><span class="result-text success">Passed</span></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-right fw-bold">SEMESTER RESULT</td>
+                                <td class="fw-bold">18</td>
+                                <td colspan="4" class="text-center fw-bold">SCPA: 7.44</td>
+                                <td class="fw-bold">459</td>
+                                <td class="fw-bold">600</td>
+                                <td><span class="badge badge-grade fw-bold">B+</span></td>
+                                <td></td>
+                                <td class="fw-bold">134</td>
+                                <td><span class="result-text success fw-bold">Passed</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- Semester Results -->
+                <div class="section-container">
+                    <h3 class="section-title">SEMESTER RESULTS</h3>
+                    <div class="table-wrapper">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>SEMESTER</th>
+                                    <th>CREDIT</th>
+                                    <th>SCPA</th>
+                                    <th>GRADE</th>
+                                    <th>RESULT</th>
+                                    <th>Month & Year of Pass</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SEMESTER I</td><td>21</td><td>7.62</td><td><span class="badge badge-grade">A</span></td><td>P</td><td>October 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>SEMESTER II</td><td>20</td><td>7.70</td><td><span class="badge badge-grade">A</span></td><td>P</td><td>October 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>SEMESTER III</td><td>21</td><td>6.38</td><td><span class="badge badge-grade">B</span></td><td>P</td><td>July 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>SEMESTER IV</td><td>21</td><td>6.81</td><td><span class="badge badge-grade">B+</span></td><td>P</td><td>November 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>SEMESTER V</td><td>19</td><td>7.00</td><td><span class="badge badge-grade">B+</span></td><td>P</td><td>January 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>SEMESTER VI</td><td>18</td><td>7.44</td><td><span class="badge badge-grade">B+</span></td><td>P</td><td>March 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Final Result -->
+                <div class="section-container">
+                    <h3 class="section-title">FINAL RESULT (CCPA)</h3>
+                    <div class="table-wrapper">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>Marks Awarded</th>
+                                    <th>Max Marks</th>
+                                    <th>CCPA</th>
+                                    <th>TOTAL CREDIT POINT</th>
+                                    <th>PROGRAMME CREDIT</th>
+                                    <th>GRADE</th>
+                                    <th>RESULT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2603</td>
+                                    <td>3600</td>
+                                    <td>7.15</td>
+                                    <td>858</td>
+                                    <td>120</td>
+                                    <td><span class="badge badge-grade">B+</span></td>
+                                    <td>P</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Programme Part Results -->
+                <div class="section-container">
+                    <h3 class="section-title">PROGRAMME PART RESULTS</h3>
+                    <div class="table-wrapper">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>PART</th>
+                                    <th>Marks Awarded</th>
+                                    <th>Max.Marks</th>
+                                    <th>CCPA</th>
+                                    <th>Credits</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left">Common Course I : English</td>
+                                    <td>128</td>
+                                    <td>200</td>
+                                    <td>6.50</td>
+                                    <td>8</td>
+                                    <td><span class="badge badge-grade">B+</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Core Course : Computer Applications</td>
+                                    <td>2056</td>
+                                    <td>2800</td>
+                                    <td>7.22</td>
+                                    <td>89</td>
+                                    <td><span class="badge badge-grade">B+</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Complementary Course : Mathematics</td>
+                                    <td>231</td>
+                                    <td>300</td>
+                                    <td>7.67</td>
+                                    <td>12</td>
+                                    <td><span class="badge badge-grade">A</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Complementary Course : Statistics</td>
+                                    <td>138</td>
+                                    <td>200</td>
+                                    <td>7.00</td>
+                                    <td>8</td>
+                                    <td><span class="badge badge-grade">B+</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Open Course : Fundamentals of Accounting</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td>5.00</td>
+                                    <td>3</td>
+                                    <td><span class="badge badge-grade">C</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <p><span class="fw-bold disclaimer-title">NOTE:</span> The results made available through the web are intended only to provide immediate information to the examinees. This is not a substitute for the original marklists/ grade sheets issued to the candidates. Mahatma Gandhi University reserves the right to update the contents of the web pages without notice. However, discrepancies which may arise due to transmission errors may be informed to the university at email address : support@mgu.ac.in</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 MG University, All Rights Reserved.</p>
+            <p class="powered-by">Powered by CETEX SDT, M.G.University</p>
+        </footer>
+    </div>
+</body>
+</html>
