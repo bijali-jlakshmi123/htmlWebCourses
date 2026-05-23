@@ -1,7 +1,7 @@
-n=input("Enter Password")
+n=input("Enter Password:")
 copy=n
 def password(n,q):
-    k=input("Enter Password")
+    k=input("Enter Password:")
     if k==n:
         print("Login Successfully")
     else:
