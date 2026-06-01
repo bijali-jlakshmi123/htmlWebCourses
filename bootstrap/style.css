@@ -1,0 +1,14 @@
+.container {
+    background-color: red;
+    height: 50px;
+}
+
+.container-fluid {
+    background-color: blue;
+    height: 50px;
+}
+
+.container-sm {
+    background-color: green;
+    height: 50px;
+}
