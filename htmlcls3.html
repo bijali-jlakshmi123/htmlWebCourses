@@ -1,0 +1,32 @@
+//array destructuring //object destructuring
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let obj1 = {
+        state: "Kerala",
+        language: "Malayalam",
+        population: 10000,
+      };
+
+      /*let state = obj1.state;
+      let language = obj1.language;
+      let population = obj1.population;
+      console.log(state);
+      console.log(language);
+      console.log(population);*/
+
+      //object destructuring
+      let { state, language, population } = obj1;
+      console.log(state);
+      console.log(language);
+      console.log(population);
+    </script>
+  </body>
+</html>
