@@ -13,6 +13,13 @@
         state: "Kerala",
         language: "Malayalam",
         population: 10000,
+
+        airports: {
+          a1: "TVM",
+          a2: "COK",
+          a3: "CCJ",
+          a4: "CNN",
+        },
       };
 
       /*let state = obj1.state;
@@ -23,10 +30,19 @@
       console.log(population);*/
 
       //object destructuring
-      let { state, language, population } = obj1;
+      let {
+        state,
+        language,
+        population,
+        airports: [a1, a2, a3, a4],
+      } = obj1;
       console.log(state);
       console.log(language);
       console.log(population);
+      console.log(a1);
+      console.log(a2);
+      console.log(a3);
+      console.log(a4);
     </script>
   </body>
 </html>
